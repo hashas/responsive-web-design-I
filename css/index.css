@@ -1,5 +1,7 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
-
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -61,151 +63,92 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-.container-home {
-	width: 880px;
-	margin: 0 auto;
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+body {
+	width: 800px;
+	margin: 0px auto;
 }
 
 header {
-    padding-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  header nav a {
-    color: #ccc;
-	text-decoration: none;
-	padding: 20px;
-    font-size: 20px;
-  }
-
-  .main-content {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 30px;
-  }
-
-  .main-content .slogan h2 {
-      font-size: 75px;
-      text-align: center;
-  }
-
-  .main-content .slogan {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      /* flex-direction: column;
-      align-content: center; */
-    }
-
-  .main-content a {
-      border: 1px solid black;
-      text-decoration: none;
-      color: black;
-      padding: 5px 50px;
-  } 
-
-  .top-content {
-      display: flex;
-      justify-content: space-between;
-  }
-
-  .top-content-left {
-      width: 48%;
-  }
-
-  .top-content-right {
-      width: 48%;
-  }
-  
-  .top-content h3 {
-	font-size: 30px;
-  }
-  
-  .top-content p {
-	font-size: 18px;
-  }
-
-  /* .middle-content {
-      display: flex;
-      justify-content: space-around;
-      padding: 30px;
-  } */
-  
-  .bottom-content {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .bottom-content-left {
-      width: 30%;
-  }
-
-  .bottom-content-middle {
-      width: 30%;
-  }
-
-  .bottom-content-right {
-      width: 30%;
-  }
-
-  .bottom-content h3 {
-	font-size: 30px;
-  }
-  
-  .bottom-content p {
-	font-size: 18px;
-  }
-  
-  footer h1 {
-	margin-top: 2%;
-  }
-  
-  footer p {
-	margin-bottom: 2%;
-  }
-  
-  footer {
-	text-align: left;
-  }
-
-  .copyright p {
-	  display: flex;
-	  justify-content: center;
-  }
-
-/* 800px */
-
-@media (max-width:800px) {
-    
-    header {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .hero-img {
-        display: none;
-    }
-
-    .main-content {
-        flex-direction: column;
-    }
-    .main-content .slogan {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-    }
-    .main-content .slogan a {
-        /* display: inline-block; */
-        text-align: center;
-        padding: 5px 50px;
-        margin: auto;
-    }
+	display: flex;
 }
 
-/* 500px */
+nav {
+	display:flex;
+	/* justify-content: space-between; */
+}
 
-@media (max-width:500px) {
+nav a {
+	/* display: inline-block; */
+	text-decoration: none;
+	width: 80px;
+}
 
+.logo {
+	/* display:inline-block; */
+	margin-left: 114px;
+}
+
+.top-content {
+	text-align: center;
+	/* vertical-align: top; */
+	margin: 50px 0px;
+	display: flex;
+}
+.top-left {
+	/* display: inline-block; */
+	margin: 50px 32px 0px 32px;
+	vertical-align: top;
+}
+
+h1 {
+	font-size: 80px;
+}
+
+.button {
+	text-decoration: none;
+	border: 1px solid black;
+	padding: 0px 50px;
+	color: black;
+}
+
+.main-content {
+	/* display: inline-block; */
+	border-top: 1px solid black;
+	/* text-align: justify; */
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.top-para {
+	width: 49.5%;
+	/* display: inline-block; */
+	padding-right: 10px;
+	margin: 30px 0px;
+}
+
+.middle-img {
+	width: 100%;
+}
+
+.bottom-para {
+	width: 33%;
+	/* display: inline-block; */
+	padding-right: 10px;
+	margin: 30px 0px;
+}
+
+.contact-section {
+	border-top: 1px solid black;
+	padding-top: 30px;
+}
+
+address {
+	width: 18%;
+}
+
+footer {
+	text-align: center;
+	margin-top: 70px;
 }
